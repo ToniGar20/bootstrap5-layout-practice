@@ -1,11 +1,15 @@
 # Project 4 - Bootstrap5 Layout
 
-## 1. Componentes
+## Documentación
 
-## 2. Utilidades
+### 1. Componentes
 
-## 3. Fichero "custom.scss"
+### 2. Utilidades
 
-## 4. Customize
+### 3. Fichero "custom.scss"
 
-## 5. Paleta de colores
+### 4. Customize
+
+### 5. Paleta de colores
+
+## Información adicional
