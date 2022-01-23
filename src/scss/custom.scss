@@ -1,20 +1,34 @@
-// Custom.scss
+/** custom.scss **/
 
-// Overrides
+/** Main colors **/
+$primary: orange;
+$secondary: #EAEAEA;
+$tertiary: black;
+$quaternary: white;
 
-  .header {
-    font-size: 16px;
-    text-decoration: none;
-    color: #5e5e5e;
-    font-family: 'RokkittRegular';
-    outline: none;
-}
-
- .row { --bs-gutter-x: 0; }
+$theme-colors: (
+        primary: $primary,
+        secondary: $secondary,
+        tertiary: $tertiary,
+        quaternary: $quaternary
+);
 
 // Option A: Include all of Bootstrap
 @import "../../node_modules/bootstrap/scss/bootstrap";
 
+/** OVERRIDES **/
+
+/* Pagination links */
+.page-link { position: relative; display: block; color: orange; text-decoration: none; background-color: $secondary; border: none; transition: none; }
+
+/* Header */
+.header { font-size: 1rem; text-decoration: none; color: #5e5e5e; font-family: 'RokkittRegular'; outline: none; }
+
+/* Non styled unordered-lists */
+ul { text-decoration: none; }
+
+/* Stuff for row */
+.row { --bs-gutter-x: 0; }
 
 // Custom.scss
 // Option B: Include parts of Bootstrap
