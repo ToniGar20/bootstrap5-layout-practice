@@ -3,7 +3,7 @@
 /** Main colors **/
 $primary: orange;
 $secondary: #EAEAEA;
-$tertiary: black;
+$tertiary: #5d5d5d;
 $quaternary: white;
 
 $theme-colors: (
@@ -22,13 +22,20 @@ $theme-colors: (
 .page-link { position: relative; display: block; color: orange; text-decoration: none; background-color: $secondary; border: none; transition: none; }
 
 /* Header */
-.header { font-size: 1rem; text-decoration: none; color: #5e5e5e; font-family: 'RokkittRegular'; outline: none; }
+.header { font-size: 1rem; text-decoration: none; color: #5e5e5e; outline: none; }
 
 /* Non styled unordered-lists */
 ul { text-decoration: none; }
 
 /* Stuff for row */
 .row { --bs-gutter-x: 0; }
+
+
+/* Font Family */
+$font-family-base: 'Rokkitt', serif, !default;
+
+body { font-family: 'Rokkitt', serif; }
+
 
 // Custom.scss
 // Option B: Include parts of Bootstrap
