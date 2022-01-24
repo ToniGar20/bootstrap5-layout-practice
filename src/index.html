@@ -3,18 +3,22 @@
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 		<title>Xayona Website</title>
-		<link rel="stylesheet" href="css/styles.css" type="text/css" />
 		<script src="https://kit.fontawesome.com/2d12050ae0.js" crossorigin="anonymous"></script>
+		<!-- Google Fonts -->
+		<style>
+			@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Rokkitt&display=swap');
+		</style>
+		<link rel="stylesheet" href="css/styles.css" type="text/css" />
 	</head>
 	<body class="bg-secondary d-flex justify-content-center" style="background-image: url('images/bg-body.jpg')">
 		<div class="container">
-			<div class="navbar navbar-expand-lg navbar-light bg-light"  style="background-image: url('images/bg-header.jpg');">
+			<div class="navbar navbar-expand-lg navbar-light bg-light" style="background-image: url('images/bg-header.jpg');">
 				<div class="container">
 					<a href="index.html" id="logo" class="navbar-brand"><img src="images/logo.gif" alt=""/></a>
 				</div>
 				<div class="container d-flex justify-content-end">
 					<ul class="navbar-nav d-flex">
-						<li class="nav-item p-4"><a class="nav-link" href="index.html">Home</a></li>
+						<li class="nav-item p-4"><a class="nav-link active text-primary" href="index.html">Home</a></li>
 						<li class="nav-item p-4"><a class="nav-link" href="#">About</a></li>
 						<li class="nav-item p-4"><a class="nav-link" href="blog.html">Blog</a></li>
 						<li class="nav-item p-4"><a class="nav-link" href="#">Services</a></li>
@@ -22,43 +26,61 @@
 				</div>
 			</div>
 			<div class="container">
-				<div class="container col-2 d-flex align-content-center align-items-center w-100 p-5 border-0 border-top border-white">
-					<div>
-						<h3 class="text-primary">This is a FREE website template.</h3>
-						<p>This website template has been designed by Free Website Templates for you, for free. You can
-						replace all this text with your own text. Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
-						sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi
-						enim ad minim veniam, quis nostrud exerci tation ullamcorper</p>
+				<div class="container row d-flex align-items-center w-100 p-5 border-0 border-top border-white">
+					<div class="col-lg-6">
+						<div class="container px-5">
+							<h3 class="text-primary">This is a FREE website template.</h3>
+							<p class="text-tertiary">
+								This website template has been designed by Free Website Templates for you, for free. You can replace all this text with your own text.
+								Want an easier solution for a Free Website? Head straight to Wix and immediately start customizing your website! Wix is an online website
+								builder with a simple drag & drop interface, meaning you do the work online and instantly publish to the web. Nothing to download,
+								nothing to upload.
+							</p>
+						</div>
 						<div class="d-flex justify-content-center p-3">
-							<input class="bg-primary text-quaternary rounded-3 h4 p-3" style="padding-left: 2rem; padding-right: 2rem;" type="button" value="Read more" onClick="parent.location='blog.html'"/>
+							<input class="btn btn-primary bg-primary text-quaternary rounded-3 px-4" type="button" value="Read more" onClick="parent.location='blog.html'"/>
 						</div>
 					</div>
-					<div>
-						<img style="margin-left: 5rem;" src="images/house.jpg" alt=""/>
+					<div class="col-lg-6 d-flex justify-content-center">
+						<img src="images/house.jpg" alt=""/>
 					</div>
 				</div>
-				<div class="container border-0 border-top border-white p-3 w-100">
-					<ul class="list-unstyled d-flex flex-row p-5 justify-content-center">
-						<li class="col p-4">
-							<div class="bg-quaternary">
-								<a class="d-flex justify-content-center p-3" href="blog.html"><img src="images/pastries.jpg" alt=""/></a>
-								<p class="small d-flex justify-content-center p-3">All Wix templates are fully customizable and free to use. Just pick one you like, click Edit, and enter the online editor. Change, add, and remove items as you like.</p>
+
+				<div class="container border-0 border-top border-white p-3 w-100 row">
+					<ul class="row list-unstyled d-flex flex-row p-5 justify-content-center">
+						<li class="col-xl-4 col-lg-6 col-md-12 p-3 d-flex flex-column align-items-center">
+							<div class="card p-2 d-flex flex-column align-items-center" style="width: 18rem;">
+								<img src="images/pastries.jpg" class="card-img-top" alt="...">
+								<div class="card-body">
+									<p class="card-text text-tertiary">All Wix templates are fully customizable and free to use. Just pick one you like, click Edit, and enter the online editor. Change, add, and remove items as you like.</p>
+								</div>
 							</div>
-							<a href="#" class="mh-100 d-flex align-content-center" style="background: url('images/button-more.jpg') no-repeat; height: 71px; text-indent: -99999px; margin-top: -1rem;">Click to read more</a>
+							<a href="#" class="nav-link pt-0 mh-100">
+								<img src="images/button-more.jpg" alt="">
+							</a>
 						</li>
-						<li class="col p-4">
-							<div class="bg-quaternary">
-								<a class="d-flex justify-content-center p-3" href="blog.html"><img src="images/fruits.jpg" alt=""/></a>
-								<p class="small d-flex justify-content-center p-3">Wix also offers a ton of free design elements right inside the editor, like images, icons, animation files, and interactive widgets. Publish your Free Website!</p>
+
+						<li class="col-xl-4 col-lg-6 col-md-12 p-3 d-flex flex-column align-items-center">
+							<div class="card p-2 d-flex flex-column align-items-center" style="width: 18rem;">
+								<img src="images/fruits.jpg" class="card-img-top" alt="...">
+								<div class="card-body">
+									<p class="card-text text-tertiary">All Wix templates are fully customizable and free to use. Just pick one you like, click Edit, and enter the online editor. Change, add, and remove items as you like.</p>
+								</div>
 							</div>
-							<a href="#" class="d-block mh-100" style="background: url('images/button-more.jpg') no-repeat; height: 71px; text-indent: -99999px; margin-top: -1rem;">Click to read more</a>
+							<a href="#" class="nav-link pt-0 mh-100">
+								<img src="images/button-more.jpg" alt="">
+							</a>
 						</li>
-						<li class="col p-4">
-							<div class="bg-quaternary">
-								<a class="d-flex justify-content-center p-3" href="blog.html"><img src="images/cosmetics.jpg" alt=""/></a>
-								<p class="small d-flex justify-content-center p-3">You can remove any link to our website from this website template, you're free to use this website template without linking back to us. Use it wherever you want at anytime!</p>
+						<li class="col-xl-4 col-lg-6 col-md-12 p-3 d-flex flex-column align-items-center">
+							<div class="card p-2 d-flex flex-column align-items-center" style="width: 18rem;">
+								<img src="images/cosmetics.jpg" class="card-img-top" alt="...">
+								<div class="card-body">
+									<p class="card-text text-tertiary">All Wix templates are fully customizable and free to use. Just pick one you like, click Edit, and enter the online editor. Change, add, and remove items as you like.</p>
+								</div>
 							</div>
-								<a href="#" class="d-block mh-100" style="background: url('images/button-more.jpg') no-repeat; height: 71px; text-indent: -99999px; margin-top: -1rem;">Click to read more</a>
+							<a href="#" class="nav-link pt-0 mh-100">
+								<img src="images/button-more.jpg" alt="">
+							</a>
 						</li>
 					</ul>
 				</div>
