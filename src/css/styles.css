@@ -10752,7 +10752,7 @@ body {
 }
 
 /** CUSTOM CLASSES **/
-/* Hiding elements */
+/* Hiding elements at different breakpoints */
 @media (max-width: 575.98px) {
   .hide-element-sm {
     display: none;
@@ -10768,6 +10768,17 @@ body {
     display: none;
   }
 }
+/* Center elements */
+@media (max-width: 1199.98px) {
+  .center-element-xl {
+    text-align: center;
+  }
+}
+/* Justify text */
+.text-justify {
+  text-align: justify;
+}
+
 /*
 // Required
 @import "../../node_modules/bootstrap/scss/functions";

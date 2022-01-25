@@ -38,11 +38,18 @@ body { font-family: 'Rokkitt', serif; }
 
 /** CUSTOM CLASSES **/
 
-/* Hiding elements */
-
+/* Hiding elements at different breakpoints */
 @include media-breakpoint-down(sm) { .hide-element-sm { display:none; } }
 @include media-breakpoint-down(md) { .hide-element-md { display:none; } }
 @include media-breakpoint-down(lg) { .hide-element-lg { display:none; } }
+
+/* Center elements */
+@include media-breakpoint-down(xl) { .center-element-xl { text-align: center; } }
+
+
+/* Justify text */
+
+.text-justify { text-align: justify; }
 
 // Custom.scss
 // Option B: Include parts of Bootstrap
