@@ -1,16 +1,17 @@
-/** custom.scss **/
 
 /** Main colors **/
-$primary: orange;
+$primary: #FFA500FF;
 $secondary: #EAEAEA;
-$tertiary: #5d5d5d;
-$quaternary: white;
+$tertiary: #5D5D5D;
+$quaternary: #FFFFFFFF;
+$special: #239393;
 
 $theme-colors: (
         primary: $primary,
         secondary: $secondary,
         tertiary: $tertiary,
-        quaternary: $quaternary
+        quaternary: $quaternary,
+        special: $special
 );
 
 // Option A: Include all of Bootstrap
@@ -19,17 +20,13 @@ $theme-colors: (
 /** OVERRIDES **/
 
 /* Pagination links */
-.page-link { position: relative; display: block; color: orange; text-decoration: none; background-color: $secondary; border: none; transition: none; }
-
-/* Header */
-.header { font-size: 1rem; text-decoration: none; color: #5e5e5e; outline: none; }
+.page-link { position: relative; display: block; color: orange; text-decoration: none; background-color: transparent; border: none; transition: none; }
 
 /* Non styled unordered-lists */
 ul { text-decoration: none; }
 
 /* Stuff for row */
 .row { --bs-gutter-x: 0; }
-
 
 /* Font Family */
 $font-family-base: 'Rokkitt', serif, !default;
@@ -46,9 +43,10 @@ body { font-family: 'Rokkitt', serif; }
 /* Center elements */
 @include media-breakpoint-down(xl) { .center-element-xl { text-align: center; } }
 
+/* Color for icons */
+a > i { color: $special }
 
 /* Justify text */
-
 .text-justify { text-align: justify; }
 
 // Custom.scss
